@@ -1,0 +1,139 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #fff;
+	font-family: "Comfortaa", cursive;
+	font-family: "Montserrat", sans-serif;
+	font-family: "Roboto", sans-serif;
+	color: #333;
+}
+nav {
+	height: 50px;
+	background-color: rgb(68, 67, 67);
+	text-align: center;
+	line-height: 50px;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a {
+	padding: 0px 50px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	transition: color 0.3s;
+	font-size: 16px;
+}
+.nav-item a:hover {
+	color: #0086f3;
+}
+.header-img {
+	position: relative;
+	height: 300px;
+	background-image: url("../img/car-6.jpg");
+	background-size: cover;
+	background-position: 0 50%;
+}
+.header-text {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 36px;
+	color: #fff;
+	z-index: 5;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.header-bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 3, 27, 0.4);
+}
+main {
+	width: 1200px;
+	height: 100vh;
+	margin: 50px auto;
+}
+main h2 {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.grid-container {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 100px;
+}
+.grid-box {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	background-size: cover;
+	height: 400px;
+}
+img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 25px;
+	transition: 0.3s;
+}
+img:hover ~ .oldtimer-bg {
+	box-shadow: 0px 0px 32px 5px #0086f3;
+	width: 100%;
+	height: 100%;
+	
+}
+.oldtimer {
+	margin: 40px 0;
+}
+.oldtimer-bg {
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	background-color: #3333335c;
+	border-radius: 25px;
+	
+}
+.oldtimer-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #0086f3;
+}
+
+footer {
+	height: 80px;
+	line-height: 80px;
+	background-color: #333;
+	font-size: 25px;
+	color: #fff;
+	text-align: center;
+}
+.icon-box a {
+	margin: 0 5px;
+	color: #ddd;
+	font-size: 30px;
+	transition: color 0.3s;
+}
+
+.icon-box a:hover {
+	margin: 0 5px;
+	color: #0086f3;
+	font-size: 30px;
+}
